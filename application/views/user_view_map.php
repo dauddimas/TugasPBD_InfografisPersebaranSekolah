@@ -21,6 +21,7 @@
                 height: 100%;
                 padding-top: 2%;
                 padding-left: 1.5%;
+                padding-right: 1.5%;
                 color: #FFF;
             }
 
@@ -61,17 +62,35 @@
             }
 
             .btn-logout {
-                font-size: 24px;
+                margin-top: 7.5%;
+                font-size: 20px;
                 transition: transform 0.1s;
+                color: #FFF;
+                display: block;
+                text-align: left;
+                margin-left: 7.5%;
+                padding-left: 7.5%;
+                border-left: 6px solid #FFF;
+                border-radius: 3px;
             }
 
             .btn-logout:hover {
-                color: #73c5ff;
+                opacity: 1;
                 transform: translateX(10px);
             }
 
             .btn-logout:active {
                 transform: translate(10px, 12px);
+            }
+
+            .usermenu {
+                border-top: 3px solid #FFF;
+                padding-top: 10%;
+            }
+
+            .aktif {
+                border-left: 6px solid #73c5ff;;
+                color: #73c5ff;
             }
 
         </style>
@@ -88,10 +107,11 @@
                 <h3>Status:</h3>
                 <h4>Pengguna</h4><br><br><br><br>
             </div>
-            <div class="menu">
-                <a href="<?php echo site_url('User');?>" class="btn btn-logout" role="button" style="color: #bdd7ff;">Tabel</a><br><br>
-                <a href="<?php echo site_url('User/showmap');?>" class="btn btn-logout" role="button" style="color: #bdd7ff;">Peta</a><br><br>
-                <a href="<?php echo site_url('Login/logout');?>" class="btn btn-logout" role="button" style="color: #bdd7ff;">Log Out</a>
+            <div class="usermenu">
+                <h2>Menu</h2><br>
+                <a href="<?php echo site_url('User');?>" class="btn btn-logout" role="button">Tabel</a>
+                <a href="<?php echo site_url('User/showmap');?>" class="btn btn-logout aktif" role="button">Peta</a>
+                <a href="<?php echo site_url('Login/logout');?>" class="btn btn-logout" role="button">Log Out</a>
             </div>
         </div>
 
