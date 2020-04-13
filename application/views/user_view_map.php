@@ -75,8 +75,8 @@
             }
 
             .btn-logout:hover {
-                opacity: 1;
                 transform: translateX(10px);
+                color: #FFF;
             }
 
             .btn-logout:active {
@@ -89,6 +89,11 @@
             }
 
             .aktif {
+                border-left: 6px solid #73c5ff;;
+                color: #73c5ff;
+            }
+
+            .aktif:hover {
                 border-left: 6px solid #73c5ff;;
                 color: #73c5ff;
             }
